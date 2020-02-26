@@ -86,6 +86,6 @@ function newFunction (a,b,c) {
 newFunction(2); //2
 newFunction(2,3); // 5
 newFunction(2,8,5); // 2
-newFunction(); //false
+newFunction(); // false
 
 ```
