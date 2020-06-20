@@ -83,7 +83,7 @@
   anônima tem como seus argumentos.
   */
   console.log( 'O resultado da soma é:' );
-  console.log( function(a,b){
+  console.log( sum(function(a,b)){
     return a + b;
   });
   // ?
@@ -93,7 +93,11 @@
   `division` e `mod`, e atribua à elas `calculator`, passando números
   diferentes para cada chamada.
   */
-  // ?
+  var subtraction = calculator(5,1);
+  var multiplication = calculator(6,4);
+  var division = calculator(50,5);
+  var mod = calculator(30,4);
+           
 
   /*
   Mostre as variáveis acima no `console` (uma chamada de console por variável),
@@ -103,14 +107,22 @@
   chamada.
   */
   console.log( 'O resultado da subtração é:' );
-  // ?
+  console.log(subtraction(function(num1, num2) {
+    return num2 - num1;
+  }));  
 
   console.log( 'O resultado da multiplicação é:' );
-  // ?
+  console.log(multiplication(function(num1,num2) {
+    return num1 * num2;
+  }));
 
   console.log( 'O resultado da divisão é:' );
-  // ?
+  console.log(division(function(num1,num2) {
+    return num1 / num2;
+  }));
 
   console.log( 'O resto da divisão é:' );
-  // ?
+  console.log(mod(function(num1,num2) {
+    return num1 % num2;
+  }));
 })(); 
